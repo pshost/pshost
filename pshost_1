@@ -1,5 +1,28 @@
-<?php
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div id='sp'>1000</div>
+	<div class="conten">电商平台汇总</div>
+	<div class="pp">
+		
+	</div>
+</body>
+<script>
+var ta = document.getElementById("sp");
+setInterval(function(){
+	aa =$('#sp').text();
+	bb = parseInt(aa)+100;
+	ta.innerHTML=bb;
+},1000)
 
-echo "Hello World";
-
-?>
+function refresh(){
+        window.location.reload();
+}
+ setTimeout('refresh()', 2000);
+</script>
+</html>
